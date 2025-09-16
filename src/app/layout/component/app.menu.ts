@@ -24,13 +24,13 @@ export class AppMenu {
                 label: 'Home',
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
-            {
-                label: 'CUSTOMERS',
-                items: [
-                    { label: 'CustomerList', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
-                    { label: 'Add Customer', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
-                ]
-            },
+            // {
+            //     label: 'CUSTOMERS',
+            //     items: [
+            //         { label: 'CustomerList', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+            //         { label: 'Add Customer', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+            //     ]
+            // },
             {
                 label: 'SHIPMENTS',
                 items: [
@@ -39,38 +39,38 @@ export class AppMenu {
                     { label: 'Orphan Cargo', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
                 ]
             },
-            {
-                label: 'JOURNEYS',
-                items: [
-                    { label: 'Active Voyages', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
-                    { label: 'Create Journey', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
-                    { label: 'Voyage History', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                ]
-            },
-            {
-                label: 'WAREHOUSE',
-                items: [
-                    { label: 'Location Management', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
-                    { label: 'Daily Cargo List', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
-                    { label: 'Move Tickets', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                ]
-            },
-            {
-                label: 'BILLINGS',
-                items: [
-                    { label: 'Invoices', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
-                    { label: 'Payments', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
-                    { label: 'Revenue Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                ]
-            },
-            {
-                label: 'REPORTS',
-                items: [
-                    { label: 'Cargo Summary', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
-                    { label: 'Revenue Analysis', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
-                    { label: 'Customer Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                ]
-            },
+            // {
+            //     label: 'JOURNEYS',
+            //     items: [
+            //         { label: 'Active Voyages', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+            //         { label: 'Create Journey', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+            //         { label: 'Voyage History', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+            //     ]
+            // },
+            // {
+            //     label: 'WAREHOUSE',
+            //     items: [
+            //         { label: 'Location Management', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+            //         { label: 'Daily Cargo List', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+            //         { label: 'Move Tickets', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+            //     ]
+            // },
+            // {
+            //     label: 'BILLINGS',
+            //     items: [
+            //         { label: 'Invoices', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+            //         { label: 'Payments', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+            //         { label: 'Revenue Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+            //     ]
+            // },
+            // {
+            //     label: 'REPORTS',
+            //     items: [
+            //         { label: 'Cargo Summary', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+            //         { label: 'Revenue Analysis', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+            //         { label: 'Customer Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+            //     ]
+            // },
             {
                 label: 'Pages',
                 icon: 'pi pi-fw pi-briefcase',
@@ -163,22 +163,22 @@ export class AppMenu {
                     }
                 ]
             },
-            {
-                label: 'Get Started',
-                items: [
-                    {
-                        label: 'Documentation',
-                        icon: 'pi pi-fw pi-book',
-                        routerLink: ['/documentation']
-                    },
-                    {
-                        label: 'View Source',
-                        icon: 'pi pi-fw pi-github',
-                        url: 'https://github.com/primefaces/sakai-ng',
-                        target: '_blank'
-                    }
-                ]
-            }
+            // {
+            //     label: 'Get Started',
+            //     items: [
+            //         {
+            //             label: 'Documentation',
+            //             icon: 'pi pi-fw pi-book',
+            //             routerLink: ['/documentation']
+            //         },
+            //         {
+            //             label: 'View Source',
+            //             icon: 'pi pi-fw pi-github',
+            //             url: 'https://github.com/primefaces/sakai-ng',
+            //             target: '_blank'
+            //         }
+            //     ]
+            // }
         ];
     }
 }

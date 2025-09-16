@@ -68,7 +68,7 @@ import { Country } from '../service/customer.service';
                 <div class="font-semibold text-xl">Cargo Booking
                 </div>
 
-                <div class="">Cargo Type</div>
+                <div class="cargoservice">Cargo Type</div>
                     <p-select [(ngModel)]="dropdownValue" [options]="dropdownValues" optionLabel="name" placeholder="Select" />
 
                 <div class="">Sub-type & Package</div>
