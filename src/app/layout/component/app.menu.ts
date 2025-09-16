@@ -25,23 +25,50 @@ export class AppMenu {
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
             {
-                label: 'UI Components',
+                label: 'CUSTOMERS',
                 items: [
-                    { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
-                    { label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
-                    { label: 'Button', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                    { label: 'Table', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/table'] },
-                    { label: 'List', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list'] },
-                    { label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree'] },
-                    { label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel'] },
-                    { label: 'Overlay', icon: 'pi pi-fw pi-clone', routerLink: ['/uikit/overlay'] },
-                    { label: 'Media', icon: 'pi pi-fw pi-image', routerLink: ['/uikit/media'] },
-                    { label: 'Menu', icon: 'pi pi-fw pi-bars', routerLink: ['/uikit/menu'] },
-                    { label: 'Message', icon: 'pi pi-fw pi-comment', routerLink: ['/uikit/message'] },
-                    { label: 'File', icon: 'pi pi-fw pi-file', routerLink: ['/uikit/file'] },
-                    { label: 'Chart', icon: 'pi pi-fw pi-chart-bar', routerLink: ['/uikit/charts'] },
-                    { label: 'Timeline', icon: 'pi pi-fw pi-calendar', routerLink: ['/uikit/timeline'] },
-                    { label: 'Misc', icon: 'pi pi-fw pi-circle', routerLink: ['/uikit/misc'] }
+                    { label: 'CustomerList', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+                    { label: 'Add Customer', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+                ]
+            },
+            {
+                label: 'SHIPMENTS',
+                items: [
+                    { label: 'Cargo Booking', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/input'] },
+                    { label: 'Shipment List', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/list'] },
+                    { label: 'Orphan Cargo', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+                ]
+            },
+            {
+                label: 'JOURNEYS',
+                items: [
+                    { label: 'Active Voyages', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+                    { label: 'Create Journey', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+                    { label: 'Voyage History', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+                ]
+            },
+            {
+                label: 'WAREHOUSE',
+                items: [
+                    { label: 'Location Management', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+                    { label: 'Daily Cargo List', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+                    { label: 'Move Tickets', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+                ]
+            },
+            {
+                label: 'BILLINGS',
+                items: [
+                    { label: 'Invoices', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+                    { label: 'Payments', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+                    { label: 'Revenue Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+                ]
+            },
+            {
+                label: 'REPORTS',
+                items: [
+                    { label: 'Cargo Summary', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/cargointake'] },
+                    { label: 'Revenue Analysis', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/shipmentlist'] },
+                    { label: 'Customer Reports', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
                 ]
             },
             {

@@ -65,32 +65,13 @@ import { Country } from '../service/customer.service';
     ],
     template: ` <p-fluid class="flex flex-col md:flex-row gap-8">
             <div class="md:w-1/2">
-                <div class="font-semibold text-xl">Cargo Booking
-                </div>
-
-                <div class="">Cargo Type</div>
-                    <p-select [(ngModel)]="dropdownValue" [options]="dropdownValues" optionLabel="name" placeholder="Select" />
-
-                <div class="">Sub-type & Package</div>
-                    <p-select [(ngModel)]="dropdownValue" [options]="dropdownValues" optionLabel="name" placeholder="Select" />
-
                 <div class="card flex flex-col gap-4">
-                    <div class="font-semibold text-xl">Dimesions & Weight</div>
+                    <div class="font-semibold text-xl">InputText</div>
                     <div class="flex flex-col md:flex-row gap-4">
                         <input pInputText type="text" placeholder="Default" />
                         <input pInputText type="text" placeholder="Disabled" [disabled]="true" />
                         <input pInputText type="text" placeholder="Invalid" class="ng-dirty ng-invalid" />
                     </div>
-
-                    <div class="font-semibold text-xl">Declared Value & Insurance</div>
-                    <p-floatlabel>
-                        <input pInputText id="username" type="text" [(ngModel)]="floatValue" />
-                        <label for="username">Username</label>
-                    </p-floatlabel>
-
-                    <div class="font-semibold text-xl">Origin & Destination</div>
-                    <p-selectbutton [(ngModel)]="selectButtonValue" [options]="selectButtonValues" optionLabel="name" />
-                
 
                     <div class="font-semibold text-xl">Icons</div>
                     <p-iconfield>
@@ -183,7 +164,8 @@ import { Country } from '../service/customer.service';
                     <div class="font-semibold text-xl">Listbox</div>
                     <p-listbox [(ngModel)]="listboxValue" [options]="listboxValues" optionLabel="name" [filter]="true" />
 
-                    
+                    <div class="font-semibold text-xl">Select</div>
+                    <p-select [(ngModel)]="dropdownValue" [options]="dropdownValues" optionLabel="name" placeholder="Select" />
 
                     <div class="font-semibold text-xl">MultiSelect</div>
                     <p-multiselect [options]="multiselectCountries" [(ngModel)]="multiselectSelectedCountries" placeholder="Select Countries" optionLabel="name" display="chip" [filter]="true">
@@ -291,19 +273,11 @@ export class InputDemo implements OnInit {
     listboxValue: any = null;
 
     dropdownValues = [
-        { name: 'Box', code: 'NY' },
-        { name: 'Bag', code: 'RM' },
-        { name: 'Bale', code: 'LDN' },
-        { name: 'Sack', code: 'IST' },
-        { name: 'Pallet', code: 'PRS' },
-        { name: 'Crate', code: 'PRS' },
-        { name: 'Drum', code: 'PRS' },
-        { name: 'Barrel', code: 'PRS' },
-        { name: 'Roll', code: 'PRS' },
-        { name: 'Bundle', code: 'PRS' },
-        { name: 'Bottle', code: 'PRS' },
-        { name: 'Unit', code: 'PRS' },
-        { name: 'Other', code: 'PRS' },
+        { name: 'New York', code: 'NY' },
+        { name: 'Rome', code: 'RM' },
+        { name: 'London', code: 'LDN' },
+        { name: 'Istanbul', code: 'IST' },
+        { name: 'Paris', code: 'PRS' }
     ];
 
     dropdownValue: any = null;
