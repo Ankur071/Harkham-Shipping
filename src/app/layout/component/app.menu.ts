@@ -34,9 +34,9 @@ export class AppMenu {
             {
                 label: 'SHIPMENTS',
                 items: [
-                    { label: 'Cargo Booking', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/input'] },
-                    { label: 'Shipment List', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/list'] },
-                    { label: 'Orphan Cargo', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
+                    { label: 'Cargo Booking', icon: 'pi pi-fw pi-box', routerLink: ['/shipments/cargo-booking'] },
+                    { label: 'Shipment List', icon: 'pi pi-fw pi-list', routerLink: ['/shipments/list'] },
+                    { label: 'Orphan Cargo', icon: 'pi pi-fw pi-exclamation-triangle', routerLink: ['/shipments/orphan-cargo'] },
                 ]
             },
             // {

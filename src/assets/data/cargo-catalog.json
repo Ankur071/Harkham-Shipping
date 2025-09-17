@@ -1,0 +1,288 @@
+{
+  "cargoCatalog": {
+    "Dry Foodstuffs": {
+      "Grains & Legumes": {
+        "Rice": {
+          "packageTypes": ["Sack (25kg/50kg)", "Box", "Other"],
+          "examples": ["Jasmine Rice", "Parboiled Rice", "Basmati Rice", "Long Grain Rice"]
+        },
+        "Beans": {
+          "packageTypes": ["Sack", "Bag", "Other"],
+          "examples": ["Kidney Beans", "Black Beans", "Pinto Beans", "Lima Beans"]
+        },
+        "Wheat/Flour": {
+          "packageTypes": ["Sack (25kg/50kg)", "Bag", "Other"],
+          "examples": ["All-Purpose Flour", "Whole Wheat Flour", "Bread Flour"]
+        },
+        "Corn": {
+          "packageTypes": ["Sack", "Bag", "Other"],
+          "examples": ["Cornmeal", "Corn Flour", "Whole Corn"]
+        }
+      },
+      "Canned/Preserved Foods": {
+        "Canned Goods": {
+          "packageTypes": ["Box", "Case", "Other"],
+          "examples": ["Canned Vegetables", "Canned Fruits", "Canned Fish", "Canned Meat"]
+        },
+        "Dried Foods": {
+          "packageTypes": ["Box", "Bag", "Other"],
+          "examples": ["Dried Fruits", "Dried Vegetables", "Instant Noodles"]
+        }
+      },
+      "Sugar & Salt": {
+        "Sugar": {
+          "packageTypes": ["Sack (25kg/50kg)", "Bag", "Other"],
+          "examples": ["White Sugar", "Brown Sugar", "Raw Sugar"]
+        },
+        "Salt": {
+          "packageTypes": ["Sack", "Bag", "Other"],
+          "examples": ["Table Salt", "Sea Salt", "Rock Salt"]
+        }
+      }
+    },
+    "Clothing & Household Goods": {
+      "Clothing": {
+        "Used/Secondhand": {
+          "packageTypes": ["Bale", "Box", "Bag", "Other"],
+          "examples": ["Mixed Apparel", "Used Shoes", "Used Bags", "Used Accessories"]
+        },
+        "New": {
+          "packageTypes": ["Box", "Polybag", "Carton", "Other"],
+          "examples": ["T-Shirts", "Jeans", "Dresses", "Underwear", "Socks"]
+        },
+        "Textiles": {
+          "packageTypes": ["Roll", "Bale", "Box", "Other"],
+          "examples": ["Fabric Rolls", "Bed Sheets", "Towels", "Curtains"]
+        }
+      },
+      "Household Items": {
+        "Furniture": {
+          "packageTypes": ["Unit", "Crate", "Wrapped", "Other"],
+          "examples": ["Chairs", "Tables", "Beds", "Cabinets", "Sofas"]
+        },
+        "Appliances": {
+          "packageTypes": ["Box", "Crate", "Unit", "Other"],
+          "examples": ["Refrigerators", "Washing Machines", "Microwaves", "Fans"]
+        },
+        "Kitchenware": {
+          "packageTypes": ["Box", "Carton", "Other"],
+          "examples": ["Pots & Pans", "Dishes", "Cutlery", "Glassware"]
+        }
+      },
+      "Personal Care": {
+        "Hygiene Products": {
+          "packageTypes": ["Box", "Case", "Other"],
+          "examples": ["Soap", "Shampoo", "Toothpaste", "Toilet Paper"]
+        },
+        "Beauty Products": {
+          "packageTypes": ["Box", "Case", "Other"],
+          "examples": ["Cosmetics", "Perfumes", "Hair Products"]
+        }
+      }
+    },
+    "Vehicles & Machinery": {
+      "Used Vehicles": {
+        "Cars": {
+          "packageTypes": ["Unit", "Other"],
+          "examples": ["Sedan", "SUV", "Pickup Truck", "Van", "Minibus"]
+        },
+        "Trucks": {
+          "packageTypes": ["Unit", "Other"],
+          "examples": ["Light Truck", "Heavy Truck", "Box Truck", "Dump Truck"]
+        },
+        "Motorcycles": {
+          "packageTypes": ["Unit", "Crate", "Other"],
+          "examples": ["Scooter", "Sport Bike", "Cruiser", "Dirt Bike"]
+        },
+        "Buses": {
+          "packageTypes": ["Unit", "Other"],
+          "examples": ["School Bus", "City Bus", "Coach Bus"]
+        }
+      },
+      "Machinery": {
+        "Construction": {
+          "packageTypes": ["Unit", "Crate", "Other"],
+          "examples": ["Backhoe", "Cement Mixer", "Excavator", "Bulldozer", "Crane"]
+        },
+        "Agricultural": {
+          "packageTypes": ["Unit", "Crate", "Other"],
+          "examples": ["Tractor", "Harvester", "Plow", "Seeder"]
+        },
+        "Industrial": {
+          "packageTypes": ["Unit", "Crate", "Other"],
+          "examples": ["Generator", "Compressor", "Pump", "Welding Machine"]
+        }
+      },
+      "Auto Parts": {
+        "New Parts": {
+          "packageTypes": ["Box", "Crate", "Pallet", "Other"],
+          "examples": ["Tires", "Batteries", "Filters", "Brake Pads"]
+        },
+        "Used Parts": {
+          "packageTypes": ["Box", "Crate", "Bundle", "Other"],
+          "examples": ["Engines", "Transmissions", "Body Parts", "Wheels"]
+        }
+      }
+    },
+    "Building Materials": {
+      "Construction Materials": {
+        "Cement & Concrete": {
+          "packageTypes": ["Bag", "Pallet", "Bulk", "Other"],
+          "examples": ["Portland Cement", "Ready Mix", "Concrete Blocks"]
+        },
+        "Steel & Metal": {
+          "packageTypes": ["Bundle", "Pallet", "Other"],
+          "examples": ["Rebar", "Steel Beams", "Sheet Metal", "Wire Mesh"]
+        },
+        "Wood & Lumber": {
+          "packageTypes": ["Bundle", "Pallet", "Other"],
+          "examples": ["Plywood", "2x4 Lumber", "Hardwood", "Particle Board"]
+        }
+      },
+      "Finishing Materials": {
+        "Tiles & Flooring": {
+          "packageTypes": ["Box", "Pallet", "Crate", "Other"],
+          "examples": ["Ceramic Tiles", "Marble", "Vinyl Flooring", "Laminate"]
+        },
+        "Paint & Chemicals": {
+          "packageTypes": ["Drum", "Bucket", "Box", "Other"],
+          "examples": ["Wall Paint", "Primer", "Varnish", "Adhesives"]
+        },
+        "Plumbing & Electrical": {
+          "packageTypes": ["Box", "Bundle", "Other"],
+          "examples": ["PVC Pipes", "Fittings", "Electrical Wire", "Switches"]
+        }
+      }
+    },
+    "General Cargo": {
+      "Barrels/Drums": {
+        "Liquids": {
+          "packageTypes": ["Barrel", "Drum", "Jerry Can", "Other"],
+          "examples": ["Cooking Oil", "Motor Oil", "Paint", "Chemicals"]
+        },
+        "Solids": {
+          "packageTypes": ["Barrel", "Drum", "Other"],
+          "examples": ["Powders", "Granules", "Pellets"]
+        }
+      },
+      "Palletized Goods": {
+        "Electronics": {
+          "packageTypes": ["Pallet", "Crate", "Box", "Other"],
+          "examples": ["TVs", "Computers", "Phones", "Audio Equipment"]
+        },
+        "Mixed Goods": {
+          "packageTypes": ["Pallet", "Other"],
+          "examples": ["Assorted Items", "Store Returns", "Overstock"]
+        }
+      },
+      "Boxed Cargo": {
+        "Small Packages": {
+          "packageTypes": ["Box", "Carton", "Other"],
+          "examples": ["Documents", "Books", "Small Electronics", "Accessories"]
+        },
+        "Large Boxes": {
+          "packageTypes": ["Box", "Crate", "Other"],
+          "examples": ["Furniture Parts", "Equipment", "Large Items"]
+        }
+      }
+    },
+    "Refrigerated Cargo": {
+      "Frozen Foods": {
+        "Meats": {
+          "packageTypes": ["Box", "Bag", "Container", "Other"],
+          "examples": ["Chicken", "Beef", "Pork", "Fish", "Seafood"]
+        },
+        "Vegetables": {
+          "packageTypes": ["Box", "Bag", "Other"],
+          "examples": ["Mixed Vegetables", "French Fries", "Corn", "Peas"]
+        },
+        "Prepared Foods": {
+          "packageTypes": ["Box", "Container", "Other"],
+          "examples": ["Ice Cream", "Frozen Meals", "Pizza", "Pastries"]
+        }
+      },
+      "Fresh Produce": {
+        "Fruits": {
+          "packageTypes": ["Crate", "Box", "Bag", "Other"],
+          "examples": ["Apples", "Bananas", "Oranges", "Mangoes", "Pineapples"]
+        },
+        "Vegetables": {
+          "packageTypes": ["Crate", "Box", "Bag", "Other"],
+          "examples": ["Onions", "Potatoes", "Tomatoes", "Lettuce", "Carrots"]
+        }
+      },
+      "Dairy Products": {
+        "Milk Products": {
+          "packageTypes": ["Box", "Container", "Other"],
+          "examples": ["Milk", "Cheese", "Butter", "Yogurt"]
+        }
+      }
+    },
+    "Medical & Pharmaceutical": {
+      "Medical Supplies": {
+        "Equipment": {
+          "packageTypes": ["Box", "Crate", "Unit", "Other"],
+          "examples": ["Hospital Beds", "Wheelchairs", "Medical Devices", "Diagnostic Equipment"]
+        },
+        "Consumables": {
+          "packageTypes": ["Box", "Case", "Other"],
+          "examples": ["Syringes", "Bandages", "Gloves", "Masks"]
+        }
+      },
+      "Pharmaceuticals": {
+        "Medicines": {
+          "packageTypes": ["Box", "Case", "Container", "Other"],
+          "examples": ["Tablets", "Capsules", "Syrups", "Injections"]
+        }
+      }
+    },
+    "Hazardous / Special Cargo": {
+      "Flammables": {
+        "Liquids": {
+          "packageTypes": ["Drum", "Jerry Can", "Container", "Other"],
+          "examples": ["Gasoline", "Diesel", "Paint Thinner", "Alcohol"]
+        },
+        "Gases": {
+          "packageTypes": ["Cylinder", "Container", "Other"],
+          "examples": ["Propane", "Butane", "Acetylene"]
+        }
+      },
+      "Chemicals": {
+        "Industrial": {
+          "packageTypes": ["Drum", "Container", "Bag", "Other"],
+          "examples": ["Acids", "Bases", "Solvents", "Pesticides"]
+        }
+      },
+      "Batteries": {
+        "Vehicle Batteries": {
+          "packageTypes": ["Unit", "Pallet", "Other"],
+          "examples": ["Car Batteries", "Truck Batteries", "Marine Batteries"]
+        }
+      }
+    }
+  },
+  "packageTypesMaster": [
+    "Bag",
+    "Bale",
+    "Barrel",
+    "Bottle",
+    "Box",
+    "Bucket",
+    "Bulk",
+    "Bundle",
+    "Carton",
+    "Case",
+    "Container",
+    "Crate",
+    "Cylinder",
+    "Drum",
+    "Jerry Can",
+    "Pallet",
+    "Polybag",
+    "Roll",
+    "Sack",
+    "Unit",
+    "Wrapped",
+    "Other"
+  ]
+}

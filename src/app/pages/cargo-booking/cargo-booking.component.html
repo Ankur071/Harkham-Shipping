@@ -1,0 +1,302 @@
+<p-toast></p-toast>
+
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+            <h2>CARGO BOOKING</h2>
+            
+            <form [formGroup]="cargoForm" (ngSubmit)="onSubmit()">
+                <div class="p-fluid">
+                    <!-- Cargo Booking Section -->
+                    <div class="field">
+                        <h5>Cargo Booking</h5>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="field">
+                        <label for="category">Category</label>
+                        <p-select 
+                            id="category" 
+                            formControlName="category" 
+                            [options]="categories" 
+                            placeholder="Select Category"
+                            [filter]="true"
+                            filterMatchMode="contains"
+                            [showClear]="true"
+                            optionLabel="label"
+                            optionValue="value"
+                            [ngClass]="{'ng-invalid ng-dirty': isFieldValid('category')}">
+                        </p-select>
+                        <small class="p-error" *ngIf="isFieldValid('category')">
+                            Category is required.
+                        </small>
+                    </div>
+
+                    <!-- Subcategory -->
+                    <div class="field">
+                        <label for="subcategory">Subcategory</label>
+                        <p-select 
+                            id="subcategory" 
+                            formControlName="subcategory" 
+                            [options]="subcategories" 
+                            placeholder="Select Subcategory"
+                            [filter]="true"
+                            filterMatchMode="contains"
+                            [showClear]="true"
+                            optionLabel="label"
+                            optionValue="value"
+                            [disabled]="!cargoForm.get('category')?.value"
+                            [ngClass]="{'ng-invalid ng-dirty': isFieldValid('subcategory')}">
+                        </p-select>
+                        <small class="p-error" *ngIf="isFieldValid('subcategory')">
+                            Subcategory is required.
+                        </small>
+                    </div>
+
+                    <!-- Item Type -->
+                    <div class="field">
+                        <label for="itemType">Item Type</label>
+                        <p-select 
+                            id="itemType" 
+                            formControlName="itemType" 
+                            [options]="itemTypes" 
+                            placeholder="Select Item Type"
+                            [filter]="true"
+                            filterMatchMode="contains"
+                            [showClear]="true"
+                            optionLabel="label"
+                            optionValue="value"
+                            [disabled]="!cargoForm.get('subcategory')?.value"
+                            [ngClass]="{'ng-invalid ng-dirty': isFieldValid('itemType')}">
+                        </p-select>
+                        <small class="p-error" *ngIf="isFieldValid('itemType')">
+                            Item type is required.
+                        </small>
+                    </div>
+
+                    <!-- Package Type -->
+                    <div class="field">
+                        <label for="packageType">Package Type</label>
+                        <p-select 
+                            id="packageType" 
+                            formControlName="packageType" 
+                            [options]="packageTypes" 
+                            placeholder="Select Package Type"
+                            [showClear]="true"
+                            optionLabel="label"
+                            optionValue="value"
+                            [disabled]="!cargoForm.get('itemType')?.value"
+                            [ngClass]="{'ng-invalid ng-dirty': isFieldValid('packageType')}">
+                        </p-select>
+                        <small class="p-error" *ngIf="isFieldValid('packageType')">
+                            Package type is required.
+                        </small>
+                    </div>
+
+                    <!-- Examples (shown when available) -->
+                    <div class="field" *ngIf="showExamples">
+                        <label>Common Examples</label>
+                        <div class="examples-container p-2 surface-100 border-round">
+                            <span *ngFor="let example of itemExamples; let i = index" class="example-chip">
+                                {{ example }}<span *ngIf="i < itemExamples.length - 1">, </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Description/Notes -->
+                    <div class="field">
+                        <label for="description">Description/Notes (Optional)</label>
+                        <textarea 
+                            pTextarea 
+                            id="description"
+                            formControlName="description" 
+                            placeholder="Enter any additional details about your cargo"
+                            [autoResize]="true" 
+                            rows="3" 
+                            cols="30">
+                        </textarea>
+                    </div>
+
+                    <!-- Dimensions & Weight -->
+                    <div class="field">
+                        <label>Dimensions & Weight</label>
+                        <div formGroupName="dimensions" class="grid">
+                            <div class="col-12 md:col-3">
+                                <div class="field">
+                                    <label for="length" class="text-sm">L</label>
+                                    <p-inputNumber 
+                                        id="length"
+                                        formControlName="length" 
+                                        placeholder="Length"
+                                        [min]="0"
+                                        [showButtons]="false"
+                                        [ngClass]="{'ng-invalid ng-dirty': isDimensionFieldValid('length')}">
+                                    </p-inputNumber>
+                                    <small class="p-error" *ngIf="isDimensionFieldValid('length')">
+                                        Required
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-12 md:col-3">
+                                <div class="field">
+                                    <label for="width" class="text-sm">W</label>
+                                    <p-inputNumber 
+                                        id="width"
+                                        formControlName="width" 
+                                        placeholder="Width"
+                                        [min]="0"
+                                        [showButtons]="false"
+                                        [ngClass]="{'ng-invalid ng-dirty': isDimensionFieldValid('width')}">
+                                    </p-inputNumber>
+                                    <small class="p-error" *ngIf="isDimensionFieldValid('width')">
+                                        Required
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-12 md:col-3">
+                                <div class="field">
+                                    <label for="height" class="text-sm">H</label>
+                                    <p-inputNumber 
+                                        id="height"
+                                        formControlName="height" 
+                                        placeholder="Height"
+                                        [min]="0"
+                                        [showButtons]="false"
+                                        [ngClass]="{'ng-invalid ng-dirty': isDimensionFieldValid('height')}">
+                                    </p-inputNumber>
+                                    <small class="p-error" *ngIf="isDimensionFieldValid('height')">
+                                        Required
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-12 md:col-3">
+                                <div class="field">
+                                    <label for="weight" class="text-sm">Weight (kg)</label>
+                                    <p-inputNumber 
+                                        id="weight"
+                                        formControlName="weight" 
+                                        placeholder="Weight"
+                                        [min]="0"
+                                        [showButtons]="false"
+                                        [ngClass]="{'ng-invalid ng-dirty': isDimensionFieldValid('weight')}">
+                                    </p-inputNumber>
+                                    <small class="p-error" *ngIf="isDimensionFieldValid('weight')">
+                                        Required
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Declared Value & Insurance -->
+                    <div class="field">
+                        <label for="declaredValue">Declared Value & Insurance</label>
+                        <div class="grid">
+                            <div class="col-12 md:col-9">
+                                <p-inputNumber 
+                                    id="declaredValue"
+                                    formControlName="declaredValue" 
+                                    placeholder="Enter declared value"
+                                    mode="currency" 
+                                    currency="USD"
+                                    [min]="0">
+                                </p-inputNumber>
+                            </div>
+                            <div class="col-12 md:col-3">
+                                <div class="flex align-items-center h-full">
+                                    <p-checkbox 
+                                        formControlName="insurance" 
+                                        [binary]="true" 
+                                        inputId="insurance">
+                                    </p-checkbox>
+                                    <label for="insurance" class="ml-2">Add Insurance</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Origin & Destination -->
+                    <div class="field">
+                        <label>Origin & Destination</label>
+                        <div class="grid">
+                            <div class="col-12 md:col-6">
+                                <p-select 
+                                    id="origin"
+                                    formControlName="origin" 
+                                    [options]="origins" 
+                                    placeholder="Select Origin"
+                                    [filter]="true"
+                                    filterMatchMode="contains"
+                                    [showClear]="true"
+                                    optionLabel="label"
+                                    optionValue="value"
+                                    [ngClass]="{'ng-invalid ng-dirty': isFieldValid('origin')}">
+                                </p-select>
+                                <small class="p-error" *ngIf="isFieldValid('origin')">
+                                    Origin is required.
+                                </small>
+                            </div>
+                            <div class="col-12 md:col-6">
+                                <p-select 
+                                    id="destination"
+                                    formControlName="destination" 
+                                    [options]="destinations" 
+                                    placeholder="Select Destination"
+                                    [filter]="true"
+                                    filterMatchMode="contains"
+                                    [showClear]="true"
+                                    optionLabel="label"
+                                    optionValue="value"
+                                    [ngClass]="{'ng-invalid ng-dirty': isFieldValid('destination')}">
+                                </p-select>
+                                <small class="p-error" *ngIf="isFieldValid('destination')">
+                                    Destination is required.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="field">
+                        <div class="flex flex-wrap gap-2 justify-content-center">
+                            <p-button 
+                                type="submit" 
+                                label="Next" 
+                                icon="pi pi-arrow-right"
+                                iconPos="right"
+                                [loading]="loading"
+                                styleClass="p-button-success"
+                                [disabled]="loading">
+                            </p-button>
+                            <p-button 
+                                type="button" 
+                                label="Calculate Cost" 
+                                icon="pi pi-calculator"
+                                (onClick)="calculateCost()"
+                                styleClass="p-button-info"
+                                [disabled]="loading || cargoForm.invalid">
+                            </p-button>
+                            <p-button 
+                                type="button" 
+                                label="Reset" 
+                                icon="pi pi-refresh"
+                                (onClick)="resetForm()"
+                                styleClass="p-button-secondary"
+                                [disabled]="loading">
+                            </p-button>
+                        </div>
+                    </div>
+
+                    <!-- Loading Spinner -->
+                    <div *ngIf="loading" class="flex justify-content-center mt-3">
+                        <p-progressSpinner 
+                            [style]="{width: '50px', height: '50px'}"
+                            styleClass="custom-spinner"
+                            strokeWidth="4">
+                        </p-progressSpinner>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
